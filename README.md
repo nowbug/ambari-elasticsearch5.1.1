@@ -51,15 +51,7 @@ ulimit -a
 
 # 安装
 
-VERSION=`hdp-select status hadoop-client | sed 's/hadoop-client - \([0-9]\.[0-9]\).*/\1/'`
-
-```
-sudo git clone https://github.com/Jaraxal/ambari-elasticsearch-service /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/ELASTICSEARCH
-```
-如果你没有使用git的能力，你可以下载回购存档并将其解压到上面显示的目录。
-
-安装服务后，您需要重新启动Ambari服务器。
-
+放在指定的目录并重启你的ambari服务
 
 ```
 sudo service ambari-server restart
